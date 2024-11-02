@@ -49,7 +49,7 @@ a{
      /*home*/
 
 #home{
-    height: 100vh;
+    min-height: 100vh;
     background-color: #132d46;
     
 }
@@ -102,9 +102,10 @@ img{
     
 }
 .txtn{
-    height: 90vh;
+    min-height: 90vh;
     width: 90%;
     margin: auto;
+    padding-bottom: 30px;
     background-color: #01c3;
     border-radius: 10px;
     box-shadow: 15px 15px 15px #0000005b;
@@ -112,7 +113,7 @@ img{
 
 .titolo{
     font-size: 3rem;
-    margin-bottom: 30px
+    margin-bottom: 30px;
 }
 
 #info{
@@ -130,6 +131,13 @@ img{
 
 .txtn-info p {text-align: justify;
     font-size: 20px;
+}
+
+#skils{
+    width: 90%;
+    height: 70px;
+    background-color: #0fa1db;
+    margin: auto;
 }
 
 /* projetos */
@@ -185,4 +193,103 @@ p{
 #contactos{
     height: 100vh;
     background-color: #0e263b;
+}
+
+
+@media (max-width: 900px){
+    #nav-bar{
+        display: none;
+    }
+    nav{
+        position: fixed;
+    }
+
+    #home{
+        height: 100vh;
+    }
+
+    .continer{
+        margin: 0 0 0 0;
+        padding: 0;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-areas: 
+        'item-1'
+        'item-2';
+        
+    }
+
+    .foto-perfil{
+        grid-area: item-1;
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px
+    }
+    #perfil{
+        margin: 0;
+        width: 60%;
+        padding: 0;
+        margin: 0;
+    }
+    #nomes{
+        width: 100%;
+    }
+    #intro{
+        width: 100%;
+    }
+    .textos{
+        margin: 0;
+        padding: 0;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    /* sobre */
+
+    #info{
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+        'txtn-info'
+        'img'
+    }
+
+    .txtn-info{
+        grid-area: txtn-info;
+        width: 90%;
+        margin: auto;
+    }
+
+    #img{
+        grid-area: img;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding: 0;
+        padding: 20px;
+    }
+    img{
+        width: 90%;
+        margin: auto;
+    }
+
+    .proj-continer{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .card-proj{
+        height: 150px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nome-proj{
+        text-align: start;
+        margin-left: 10px;
+    }
 }
