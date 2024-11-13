@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>portifolio</title>
 </head>
 <body>
@@ -13,11 +14,15 @@
                 Rangeiro
             </div>
             <div id="nav-bar">
-                <button class="nav-btn"><a href="#home">Home</a></button>
-                <button class="nav-btn"><a href="#sobre">Sobre</a></button>
-                <button class="nav-btn"><a href="#projetos">Projetos</a></button>
-                <button class="nav-btn"><a href="#contactos">Contactos</a></button>
+                <button class="nav-btn" onclick="repor()"><a href="#home">Home</a></button>
+
+                <button class="nav-btn" onclick="repor()"><a href="#sobre">Sobre</a></button>
+
+                <button class="nav-btn" onclick="repor()"><a href="#projetos">Projetos</a></button>
+
+                <button class="nav-btn" onclick="repor()"><a href="#contactos">Contactos</a></button>
             </div>
+            <img src="img/bars-solid.svg" alt="" id="icon" onclick="hamburger()">
         </nav>
     </header>
 
@@ -41,7 +46,7 @@
                 
             </div>
 
-            <div class="foto-perfil">
+            <div class="foto-perfil" >
                 <img src="img/peflil.jpg" alt="" id="perfil" >
             </div>
         </div>
@@ -51,10 +56,10 @@
 
     <section id="sobre">
         <div class="txtn">
-            <h1 class="titolo">sobre mim</h1>
+            <h1 class="titolo" data-aos="fade-right">sobre mim</h1>
 
             <div id="info">
-                <div id="img"><img src="img/undraw_hacker_mind_6y85 (1).png" alt="avatar"></div>
+                <div id="img" ><img src="img/undraw_hacker_mind_6y85 (1).png" alt="avatar" ></div>
                 <div class="txtn-info">
                     <p>Sou um jovem moçambicano e desenvolvo aplicações web responsivas e interativas. Já criei alguns projetos que podem ser encontrados no meu GitHub, e alguns deles estão aqui nesta página. Com esses projetos, aprendi muito e ganhei experiência valiosa.</p>
                     <p>Tenho um conhecimento considerável em <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>, e estou constantemente aprendendo. Gosto de explorar novas técnicas para melhorar meu código, tornando-o mais limpo, organizado e modularizado.</p>
@@ -71,9 +76,18 @@
     
     <!-- projetos -->
     <section id="projetos">
-        <h1 class="titolo">Projetos</h1>
+        <h1 class="titolo" data-aos="fade-right">Projetos</h1>
         <div class="proj-continer">
-            <div class="card-proj">
+            <div class="card-proj" data-aos="fade-left">
+                <div class="pre-viw">
+                    <img src="img/undraw_Online_test_re_kyfx.png" alt="" class="pre-viw">
+                </div>
+                <div class="pre-info" >
+                    <h3 class="nome-proj">nome</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut dolorum labore nihil omnis corrupti, deserunt officiis reprehenderit! Animi suscipit delectus blanditiis magni tempore, aut repudiandae voluptatum dolores soluta necessitatibus nemo.</p>
+                </div>
+            </div>
+            <div class="card-proj" data-aos="fade-left">
                 <div class="pre-viw">
                     <img src="img/undraw_Online_test_re_kyfx.png" alt="" class="pre-viw">
                 </div>
@@ -82,15 +96,7 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut dolorum labore nihil omnis corrupti, deserunt officiis reprehenderit! Animi suscipit delectus blanditiis magni tempore, aut repudiandae voluptatum dolores soluta necessitatibus nemo.</p>
                 </div>
             </div>
-            <div class="card-proj">
-                <div class="pre-viw">
-                    <img src="img/undraw_Online_test_re_kyfx.png" alt="" class="pre-viw">
-                </div>
-                <div class="pre-info">
-                    <h3 class="nome-proj">nome</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut dolorum labore nihil omnis corrupti, deserunt officiis reprehenderit! Animi suscipit delectus blanditiis magni tempore, aut repudiandae voluptatum dolores soluta necessitatibus nemo.</p>
-                </div>
-            </div><div class="card-proj">
+            <div class="card-proj" data-aos="fade-left">
                 <div class="pre-viw">
                     <img src="img/undraw_Online_test_re_kyfx.png" alt="" class="pre-viw">
                 </div>
@@ -99,7 +105,7 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut dolorum labore nihil omnis corrupti, deserunt officiis reprehenderit! Animi suscipit delectus blanditiis magni tempore, aut repudiandae voluptatum dolores soluta necessitatibus nemo.</p>
                 </div>
             </div>
-            <div class="card-proj">
+            <div class="card-proj" data-aos="fade-left">
                 <div class="pre-viw">
                     <img src="img/undraw_Online_test_re_kyfx.png" alt="" class="pre-viw">
                 </div>
@@ -108,7 +114,7 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut dolorum labore nihil omnis corrupti, deserunt officiis reprehenderit! Animi suscipit delectus blanditiis magni tempore, aut repudiandae voluptatum dolores soluta necessitatibus nemo.</p>
                 </div>
             </div>
-            <div class="card-proj">
+            <div class="card-proj" data-aos="fade-left">
                 <div class="pre-viw">
                     <img src="img/undraw_Online_test_re_kyfx.png" alt="" class="pre-viw">
                 </div>
@@ -121,8 +127,17 @@
     </section>
 
     <footer id="contactos">
-        <h1 class="titolo">contactos</h1>
+        <h1 class="titolo" data-aos="fade-right">contactos</h1>
     </footer>
+
+
+    <script src="script.js">
+        
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     
     
 </body>
