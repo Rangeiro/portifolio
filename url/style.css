@@ -1,0 +1,615 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+:root{
+    --cor_home: #418e82;
+
+    --cor_sobre: #35bdd6;
+    
+    --cor_serviços: #FF725E;
+
+    --cor_portifolio: #438BDD;
+
+    --cor_conactos: #445963;
+    
+}
+
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+header, nav{
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    padding-left: 15px;
+    padding-right: 10px;
+    color: #ffffff;
+    z-index: 5;
+}
+#logo{
+    height: 40px;
+    width: 60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul{
+    display: flex;
+    gap: 15px;
+    margin-left: 120px;
+}
+
+.nav ul li{
+    height: 30px;
+    padding: 5px;
+    list-style: none;
+    background: transparent;
+    border-radius: 5px;
+    color: #ffffff;
+    border: 1px solid var(--cor_home)
+}
+
+li a{
+   text-decoration: none;
+   color: #ffffff;
+}
+
+.idioma ul {
+    height: 20px;
+    width: 55px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    border: 1px solid var(--cor_home);
+}
+
+.idioma ul li{
+    height: 20px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    
+}
+
+#port{
+    background-color: var(--cor_home);
+}
+
+#home-btn a{
+    color: var(--cor_home);
+    border-bottom: 2px solid var(--cor_home);
+}
+
+
+         /* Home */
+#home{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #263238;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.apresentacao{
+    width: 40%;
+
+}
+
+.apresentacao h3{
+    font-size: 1.4rem;
+    color: #337067
+}
+
+.apresentacao h1{
+    font-size: 40px;
+    background-image: linear-gradient(to right, #34a780, #336d64);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent
+}
+
+.apresentacao h2{
+    font-size: 1.4rem;
+    color: #3E97D7;
+}
+
+.apresentacao p {
+    color: #ffffff;
+}
+
+#CV{
+    height: 30px;
+    width: max-content;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    background-color: var(--cor_home);
+    color: #ffffff;
+}
+
+
+.icons{
+    position: absolute;
+    bottom: 20px;
+    left: 5%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.Home-img{
+    width: 40%;
+}
+
+        /* Sobre */
+#sobre{
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 5%;
+    background-color: #90a3ac;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sobre-content{
+    width: 100%;
+    background-color: #90a3ac;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.description h1{
+    text-align: start;
+    margin-left: -50px;
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+
+.description{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.description p{
+    text-align: justify;
+    color: #ffffff;
+    font-size: 20px;
+}
+.Sobre-img{
+    width: 40%;
+    margin-top: 7%;
+}
+
+.skils{
+    width: 100%;
+    margin-top: 30px;
+    align-self: end;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.skils img{
+    height: 100px;
+}
+
+          /* Seviços */
+#serviços{
+    min-height: 110vh;
+    min-width: 100%;
+    background-color: #49555B;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#background{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+
+}
+
+#serviços h1{
+    z-index: 1;
+    margin-top: -6%;
+    margin-left: 2%;
+    font-size: 4rem;
+    color: #f79385;
+}
+
+#serviços img{
+    max-height: 100vh;
+}
+.seviços-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1000px;
+    width: 100%;
+    gap: 15px;
+    padding-left: 10px;
+    padding-top: 15vh;
+    z-index: 2;
+}
+
+
+
+.serviços{
+    height: 360px;
+    min-width: 200px;
+    width: 200px;
+    border-radius: 15px;
+
+
+    background: linear-gradient(to bottom, #fcf7f740, #d8fbff5b);
+    backdrop-filter: blur(5px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.ilustração{
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+}
+
+.ilustração img{
+    height: 100%;
+}
+.serviços h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.serviços p{
+    width: 170px;
+    margin-bottom: 5px;
+    color: #263238;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.serviços .btn{
+    height: 30px;
+    width: 80px;
+    background-color: #263238;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn p{
+    background: linear-gradient(to left, #ff725e, #819799);
+    background-clip: text;
+    color: transparent;
+    margin-top: 3px;
+    margin-left: 9px;
+}
+
+
+
+
+        /* Portifolio */
+#portifolio{
+    width: 100%;
+    min-height: 110vh;
+    background-color: #263238;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+#portifolio h1{
+    position: absolute;
+    top: -10%;
+    left: 10%;
+    font-size: 50px;  
+    font-weight: 1000;
+    color: #f5f5f5f5;
+}
+
+.card-previw{
+    height: 85vh;
+    width: 31%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+
+    background: linear-gradient(to bottom, #3e90cb8e , #263238 80%);
+    backdrop-filter: blur(4px);
+    position: absolute;
+    bottom: 10vh;
+    left: 3%;
+    z-index: 2;
+}
+
+.Previw-img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.Previw-img img{
+    width: 100%;
+    border-radius: 15px;
+}
+.card-previw h2{
+    color: #ffffff;
+
+}
+
+.card-previw p{
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to bottom, #f5f5f5f5, #9695957a);
+    background-clip: text;
+    color: transparent;
+    font-weight: 600;
+
+}
+
+.visitar-btn{
+    width: 55px;
+    height: 30px;
+    align-self: self-end;
+    background-color: #438BDD;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 10px;
+    color: #f5f5f5f5
+}
+
+
+.cards-container{
+    height: 95vh;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    position: absolute;
+    bottom: 0;
+    right: 3%;
+    overflow: hidden;
+}
+
+.cards-container img{
+    position: absolute;
+    top: 2%;
+    right: 10px;
+    max-width: 550px;
+}
+
+#cards{
+    width: 65%;
+    height: 300px;
+    position: absolute;
+    bottom: 10vh;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+
+    overflow: hidden;
+
+
+}
+
+.card {
+    height: 100%;
+    width: 200px;
+    min-width: 200px;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, #438bdd59 , #263238 80%);
+    backdrop-filter: blur(3.5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    
+}
+
+.card1 {
+    margin-left: 00px;
+}
+
+.card h3{
+    color: white;
+    text-align: center;
+
+}
+
+.card p{
+    height: 670%;
+    background: linear-gradient(to bottom, #f5f5f5f5, #cccbcb81);
+    background-clip: text;
+    color: transparent;
+    margin: 9px;
+}
+
+.card h5{
+    width: max-content;
+    color: #aacbf0;
+    border-bottom: 1px solid #aacbf0;
+}
+
+
+        /* contactos */
+
+#contactos{
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 7%;
+    padding: 5%;
+    background-color: #C7CACC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#contactos h1 {
+    width: 100%;
+    color: #3d4f58;
+    font-size: 50px;
+    font-weight: 1000;
+}
+
+.barra-de-contactos{
+    width: 100%;
+    border-top: 7px solid #3d4f58;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-items: start;
+    column-gap: 15px;
+    padding-top: 10px
+
+}
+.barra-de-contactos img{
+    width: 75px;
+}
+
+.formulario{
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.formulario img{
+    width: 40%;
+    max-width: 550px;
+}
+
+form{
+    width: 50%;
+    max-width: 550px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form h2{
+    color: #3d4f58;
+    font-size: 1.7rem;
+}
+
+
+
+.dados{
+    width: 100%;
+    height: 18%;
+    display: grid;
+    grid-template-rows: repeat(2 , 35px);
+    grid-template-columns: repeat(2 , 45%);
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+input{
+    background-color: #dadee0;
+    color: #687277;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 2px solid #687277;
+    padding-left: 10px;
+    font-size: 1.1rem;
+}
+
+textarea{
+    width: 100%;
+    height: 50%;
+    background: #dadee0;
+    color: #687277;
+    padding: 10px;
+    border: 1px solid #4a5053;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#enviar{
+    width: 80px;
+    height: 40px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    background-color: #3d4f58;
+    border: none;
+    color: #f5f5f5f5;
+    border-radius: 10px;
+}
+
+#limpar{
+    width: 80px;
+    height: 40px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    background-color: #f5f5f5;
+    border: none;
+    color: #3d4f58;
+    border-radius: 10px;
+}
