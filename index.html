@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="url/style.css">
     <title>portifolio</title>
 </head>
@@ -13,19 +14,19 @@
                 <h3>Logo</h3>
             </div>
 
-            <div class="nav">
+            <div class="nav" id="nav">
                 
 
                 <ul>
-                    <li class="nav_btn" id="btn1" ><a id="home_btn"  href="#home">Home</a></li>
+                    <li class="nav_btn" id="btn1" onclick="nav(`fechar`)"><a id="home_btn"  href="#home">Home</a></li>
 
-                    <li class="nav_btn" id="btn2" ><a id="sobre_btn" href="#sobre">Sobre</a></li>
+                    <li class="nav_btn" id="btn2" onclick="nav(`fechar`)"><a id="sobre_btn" href="#sobre">Sobre</a></li>
 
-                    <li class="nav_btn" id="btn3" ><a id="serviços_btn"  href="#serviços">Serviços</a></li>
+                    <li class="nav_btn" id="btn3" onclick="nav(`fechar`)"><a id="serviços_btn"  href="#serviços">Serviços</a></li>
 
-                    <li class="nav_btn" id="btn4" ><a id="portifolio_btn" href="#portifolio">Portifolio</a></li>
+                    <li class="nav_btn" id="btn4" onclick="nav(`fechar`)"><a id="portifolio_btn" href="#portifolio">Portifolio</a></li>
 
-                    <li class="nav_btn" id="btn5"><a id="contactos_btn" href="#contactos" >Contactos</a></li>
+                    <li class="nav_btn" id="btn5" onclick="nav(`fechar`)"><a id="contactos_btn" href="#contactos" >Contactos</a></li>
                 </ul>
             </div>
 
@@ -34,6 +35,9 @@
                     <li id="port">Port</li>
                     <li id="eng">Eng</li>
                 </ul>
+                
+                <i class="fa-solid fa-bars" id="bars" onclick="nav(`abrir`)"></i>
+                <i class="fa-solid fa-xmark" id="xmark" onclick="nav(`fechar`)"></i>
             </div>
         </nav>
     </header>
@@ -46,7 +50,9 @@
             <h1>Manuel Rangeiro Junior</h1>
             <h2>Desenvolvedor web</h2>
             <p>Codificando o futuro, um pixel de cada vez.</p>
-            <p>A cada desafio, uma nova oportunidade de aprender e crescer.</p>
+            <p>
+                A cada desafio, uma nova oportunidade de aprender e    crescer.
+            </p>
 
             <div id="CV">
                 Download CV
@@ -192,15 +198,16 @@
     <section id="portifolio" >
 
         <div class="card-previw">
-            <h1>Projetos</h1>
+            <h1 class="titolo">Projetos</h1>
 
             <di class="Previw-img">
                 <img src="url/imagens/science-fiction-5105730_1280.jpg" alt="">
+                
+                <h2>Gaming web site</h2>
+                <h4 class="visitar-btn">
+                    visitar
+                </h4>
             </di>
-            <h4 class="visitar-btn">
-                visitar
-            </h4>
-            <h2>Gaming web site</h2>
 
             <p>
                 Esté site foi desenvolvido com o tema “Gaming” é para um projeto de um game que ainda é apenas conceitual e é um projeto a longo praso.... <br> <br>
