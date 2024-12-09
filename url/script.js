@@ -15,6 +15,7 @@ let btn4 = document.getElementById(`btn4`)
 let btn5 = document.getElementById(`btn5`)
 
 let btn = document.querySelectorAll('div.nav_btn')
+let formulario = document.getElementById(`formulario`)
 
 let home_btn =document.getElementById(`home_btn`)
 let sobre_btn =document.getElementById(`sobre_btn`)
@@ -29,7 +30,7 @@ let port = document.getElementById(`port`)
 let eng = document.getElementById(`eng`)
 
 let branco = `#ffffff`
-
+let cor5 = `#445963`
 function ajustar(){
 
     let home_size =home.getBoundingClientRect()
@@ -144,11 +145,11 @@ function ajustar(){
         
         
         
-        home_btn.style.color = `#445963`
-        sobre_btn.style.color = `#445963`
-        serviços_btn.style.color = `#445963`
-        portifolio_btn.style.color = `#445963`
-        contactos_btn.style.color = `#445963`
+        home_btn.style.color = cor5
+        sobre_btn.style.color = cor5
+        serviços_btn.style.color = cor5
+        portifolio_btn.style.color = cor5
+        contactos_btn.style.color = cor5
 
         btn5.style.background = `#f5f5f5`
 
@@ -157,27 +158,20 @@ function ajustar(){
         btn3.style.border = `2px solid #445963`
         btn4.style.border = `2px solid #445963`
         btn5.style.border = `2px solid #445963`
-        bars.style.color = `#445963`
-        xmark.style.color = `#445963`
+        bars.style.color = cor5
+        xmark.style.color = branco
 
-        port.style.background = `#445963`
+        port.style.background = cor5
         port.style.border = `2px solid #445963`
         eng.style.border = `2px solid #445963`
-        eng.style.color = `#445963`
+        eng.style.color = cor5
         logo.style.border = `2px solid #445963`
         logo.style.color = `#444963`
 
-        if(home.style.width < `400px`){
-                
-            home_btn.style.color = `#C7CACC`
-            sobre_btn.style.color = `#C7CACC`
-            serviços_btn.style.color = `#C7CACC`
-            portifolio_btn.style.color = `#C7CACC`
-            contactos_btn.style.color = `#C7CACC`
+        
 
-            contactos_btn.style.color = `#445963`
+        contactos_btn.style.color = `#444963` 
             
-        }
         
     }
     
@@ -189,6 +183,7 @@ function nav(n){
     let navbar = document.getElementById(`nav`)
     
     if(n === `abrir`){
+        cor5 = `#C7CACC`
         navbar.style.display = `flex`
         xmark.style.display = `block`
         bars.style.display = `none`
@@ -197,8 +192,9 @@ function nav(n){
         navbar.style.display = `none`
         xmark.style.display = `none`
         bars.style.display = `block`
+
     }
     
-
+    ajustar()
     
 }
