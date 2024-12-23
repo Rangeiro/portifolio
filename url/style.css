@@ -800,7 +800,7 @@ textarea{
         height: 30vh;
         width: 90%;
         left: 0;
-        background: linear-gradient(to right, #3e90cb8e , #263238 90%);
+        background: linear-gradient(to right, #3e90cb8e , #263238 100%);
         backdrop-filter: blur(4px);
     }
     #portifolio h1{
@@ -838,7 +838,7 @@ textarea{
     }
 
     #cards{
-        height: 40%;
+        height: 35%;
         width: 100%;
         padding: 5%;
         bottom: 5px;
@@ -862,7 +862,18 @@ textarea{
 
     .card{
         width: 100%;
+        height: 100px;
         padding-top: 10px;
+        background: linear-gradient(to right,  #438bdd59 , #263238 90%);
+        padding-bottom: 0;
+        
+    }
+    .card p{
+        overflow: hidden;
+    }
+
+    .card h5{
+        display: none;
     }
 
 
