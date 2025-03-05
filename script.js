@@ -1,19 +1,26 @@
-let icon = document.getElementById('icon')
-let nav_bar = document.getElementById('nav-bar')
+
+var xmark = document.getElementById(`xmark`)
+var bars = document.getElementById(`bars`)
+var nav = document.getElementById(`nav`)
 
 
-if (nav_bar.style.width >= `600px`){
-    function hamburger(){
-        nav_bar.style.display = 'none'
-        icon.style.display = 'block'
-        
-        if(nav_bar.style.display == 'none'){
-            nav_bar.style.display = 'flex'
-            icon.style.display = 'none'
-        }
+function navbar(n){
+            
+
+    if( n === `abrir`){
+        nav.style.display = `flex`
+        bars.style.display = `none`
+        xmark.style.display = `block`
+
     }
-    function repor(){
-        nav_bar.style.display = 'none'
-        icon.style.display = 'block'
-    }
+    
+}
+
+function fechar(){
+
+    alert(`cheguei`)
+
+    nav.style.display = `none`
+    xmark.style.display = `none`
+    bars.style.display = `block`
 }

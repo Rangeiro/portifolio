@@ -5,131 +5,193 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>portifolio</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div id="logo">
-                Rangeiro
-            </div>
-            <div id="nav-bar">
-                <button class="nav-btn" onclick="repor()"><a href="#home">Home</a></button>
+   <header>
+        <div class="logo">
+            <h1>Logo.</h1>
+        </div>
 
-                <button class="nav-btn" onclick="repor()"><a href="#sobre">Sobre</a></button>
-
-                <button class="nav-btn" onclick="repor()"><a href="#projetos">Projetos</a></button>
-
-                <button class="nav-btn" onclick="repor()"><a href="#contactos">Contactos</a></button>
-            </div>
-            <img src="img/bars-solid.svg" alt="" id="icon" onclick="hamburger()">
+        <nav id="nav">
+            <ul>
+                <li><a class="nav-item" href="#">Home</a></li>
+                <li><a class="nav-item" href="#">sobre</a></li>
+                <li><a class="nav-item" href="#">Serviços</a></li>
+                <li><a class="nav-item" href="#">Portifolio</a></li>
+                <li><a class="nav-item" href="#">Contactos</a></li>
+            </ul>
         </nav>
-    </header>
 
+        <div class="contactar">
+            <a href="#">Contactar</a>
+        </div>
 
-    <!-- home -->
+        <!-- <img id="nav-btn" src="img/bars-solid.svg" onclick="navbar(`abrir`)" alt=""> -->
+         
+        
+   </header>
 
+   <section id="home">
+    <div class="nome">
+        <h1>
+            Manuel <br>
+            Rangeiro Jr
+        </h1>
+    </div>
+
+    <div class="img">
+        <img src="img/perfil1.png" alt="">
+    </div>
+
+    <div class="info">
+        <h3>Desenvolvedor</h3>
+        <h2>Froont-End</h2>
+        <p>A melhor maneira de prever o futuro é cria-lo <br>
+        Deixe-me aajudalo a tranformar o seu sonho em realidade, pois seu sonho é o seu futuro</p>
+
+        <button>Download CV </button>
+    </div>
+   </section>
+   <section id="sobre">
+        <div class="img">
+            <img src="img/peflil.jpg" alt="">
+        </div>
+        <div class="sobre">
+            <h1>sobre <span>mim</span></h1>
+            <p>
+                Olá, eu sou Manuel Rangeiro Júnior, um desenvolvedor front-end apaixonado por criar experiências web incríveis. Com sólidos conhecimentos em HTML, CSS, JavaScript e Figma, desenvolvo interfaces intuitivas e responsivas que se adaptam a qualquer dispositivo
+
+            </p>
+
+            <p>
+                Atualmente, estou aprofundando meus estudos em PHP para me tornar um desenvolvedor full stack completo. Tenho experiência na criação de e-commerces, landing pages e websites institucionais, sempre buscando soluções que atendam às necessidades específicas de cada cliente.
+            </p>
+
+            <p>
+                Acredito que a tecnologia tem o poder de conectar pessoas e transformar negócios. Por isso, me dedico a criar websites que não apenas atraem, mas também convertem visitantes em clientes fiéis.
+            </p>
+    </div>
+   </section>
+
+   <section id="servicos">
+
+        <h1>Meus <span>Serviços</span></h1>
     
-    <section id="home">
-        <div class="continer">
-            <div class="textos">
-                <div id="nomes">
-                    <h1>Ola!, eu sou </h1>
-                    <h1 id="nome">Manuel Rangeiro Junior</h1>
-                    <h2 class="sub-titolo">Desenvolvedor Front-end</h2>
-                </div>
-                <div id="intro">
+        <div id="services">
+            <div class="cardvices">
+                <img src="icnos/website.PNG" alt="">
+                <div class="content">
+                    <h3>criação de paginas web</h3>
                     <p>
-                        Seja bem-vindo ao meu portfólio pessoal. Nesta página, você pode saber mais sobre mim, minhas habilidades. Também pode ver alguns dos meus projetos que estão disponíveis aqui nesta página e, no fim da página, estarão lá os meus contatos.
+                        Desenvolvimento de diferentes tipos de  sites estaticos e dinamico como:  <br>
+                        Landing pages <br>
+                        sites institucionais <br>
+                        E-comerces e Blogs <br>
                     </p>
                 </div>
-                
             </div>
-
-            <div class="foto-perfil" >
-                <img src="img/peflil.jpg" alt="" id="perfil" >
-            </div>
-        </div>
-    </section>
-
-    <!-- sobre -->
-
-    <section id="sobre">
-        <div class="txtn">
-            <h1 class="titolo" data-aos="fade-right">sobre mim</h1>
-
-            <div id="info">
-                <div id="img" ><img src="img/undraw_hacker_mind_6y85 (1).png" alt="avatar" ></div>
-                <div class="txtn-info">
-                    <p>Sou um jovem moçambicano e desenvolvo aplicações web responsivas e interativas. Já criei alguns projetos que podem ser encontrados no meu GitHub, e alguns deles estão aqui nesta página. Com esses projetos, aprendi muito e ganhei experiência valiosa.</p>
-                    <p>Tenho um conhecimento considerável em <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>, e estou constantemente aprendendo. Gosto de explorar novas técnicas para melhorar meu código, tornando-o mais limpo, organizado e modularizado.</p>
-                    <p>Passo boa parte do meu dia codando, pesquisando e aprendendo cada vez mais.</p>
-                    <p>Meu objetivo é me tornar um desenvolvedor full stack em breve e, com o tempo, migrar para outras áreas, como o desenvolvimento de aplicativos mobile, desktop, games, e muito mais.</p>
+            
+            <div class="cardvices">
+                <img src="icnos/wireframe.PNG" alt="">
+                <div class="content">
+                    <h3>Design responsivo</h3>
+                    <p>
+                        Adaptar o layout para diferentes tamanhos de tela. <br>
+                        Garantir  uma boa experiencia  em grandes telas, assim como em telas menres.
+                    </p>
                 </div>
-                
             </div>
-            <div id="skils">
-                    
+            
+            <div class="cardvices">
+                <img src="icnos/responsive-design.PNG" alt="">
+                <div class="content">
+                    <h3>UI/UX Design</h3>
+                    <p>
+                        Criar prototipos e para websites usando o figma <br>
+                        Criação e implementacão de  interfaces do usuario amigaveis e armonicas 
+                    </p>
+                </div>
             </div>
+               
         </div>
     </section>
-    
-    <!-- projetos -->
+
     <section id="projetos">
-        <h1 class="titolo" data-aos="fade-right">Projetos</h1>
-        <div class="proj-continer">
-            <div class="card-proj" data-aos="fade-left">
-                <div class="pre-viw">
-                    <img src="img/undraw_Online_test_re_kyfx.png" alt="" class="pre-viw">
-                </div>
-                <div class="pre-info" >
-                    <h3 class="nome-proj">nome</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut dolorum labore nihil omnis corrupti, deserunt officiis reprehenderit! Animi suscipit delectus blanditiis magni tempore, aut repudiandae voluptatum dolores soluta necessitatibus nemo.</p>
-                </div>
-            </div>
-            <div class="card-proj" data-aos="fade-left">
-                <div class="pre-viw">
-                    <img src="img/undraw_Online_test_re_kyfx.png" alt="" class="pre-viw">
-                </div>
-                <div class="pre-info">
-                    <h3 class="nome-proj">nome</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut dolorum labore nihil omnis corrupti, deserunt officiis reprehenderit! Animi suscipit delectus blanditiis magni tempore, aut repudiandae voluptatum dolores soluta necessitatibus nemo.</p>
+
+        <h1><span>Portifolio</span></h1>
+
+
+        <div class="projetos">
+            <div class="projeto">
+                <img src="img/ARCHdecore.png" alt="">
+                <div>
+                    <h3>E-comerce website</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, aliquid at? Ullam, qui architecto iure minima expedita eaque amet recusandae earum enim repellat dolor numquam magni hic eius alias inventore!</p>
                 </div>
             </div>
-            <div class="card-proj" data-aos="fade-left">
-                <div class="pre-viw">
-                    <img src="img/undraw_Online_test_re_kyfx.png" alt="" class="pre-viw">
-                </div>
-                <div class="pre-info">
-                    <h3 class="nome-proj">nome</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut dolorum labore nihil omnis corrupti, deserunt officiis reprehenderit! Animi suscipit delectus blanditiis magni tempore, aut repudiandae voluptatum dolores soluta necessitatibus nemo.</p>
+            <div class="projeto">
+                <img src="img/porifolio-amico.png" alt="">
+                <div>
+                    <h3>portifolio-amico</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, aliquid at? Ullam, qui architecto iure minima expedita eaque amet recusandae earum enim repellat dolor numquam magni hic eius alias inventore!</p>
                 </div>
             </div>
-            <div class="card-proj" data-aos="fade-left">
-                <div class="pre-viw">
-                    <img src="img/undraw_Online_test_re_kyfx.png" alt="" class="pre-viw">
-                </div>
-                <div class="pre-info">
-                    <h3 class="nome-proj">nome</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut dolorum labore nihil omnis corrupti, deserunt officiis reprehenderit! Animi suscipit delectus blanditiis magni tempore, aut repudiandae voluptatum dolores soluta necessitatibus nemo.</p>
+            <div class="projeto">
+                <img src="img/ecomerce.png" alt="">
+                <div>
+                    <h3>E-comerce website</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, aliquid at? Ullam, qui architecto iure minima expedita eaque amet recusandae earum enim repellat dolor numquam magni hic eius alias inventore!</p>
                 </div>
             </div>
-            <div class="card-proj" data-aos="fade-left">
-                <div class="pre-viw">
-                    <img src="img/undraw_Online_test_re_kyfx.png" alt="" class="pre-viw">
-                </div>
-                <div class="pre-info">
-                    <h3 class="nome-proj">nome</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut dolorum labore nihil omnis corrupti, deserunt officiis reprehenderit! Animi suscipit delectus blanditiis magni tempore, aut repudiandae voluptatum dolores soluta necessitatibus nemo.</p>
+            <div class="projeto">
+                <img src="img/portifolio-home.png" alt="">
+                <div>
+                    <h3>portifolio</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, aliquid at? Ullam, qui architecto iure minima expedita eaque amet recusandae earum enim repellat dolor numquam magni hic eius alias inventore!</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="contactos">
-        <h1 class="titolo" data-aos="fade-right">contactos</h1>
-    </footer>
+    <section id="contactos">
 
+        <h1>
+            <span>Contactos</span>
+        </h1>
+
+        <div class="contactos">
+            <div class="redes">
+                <div>
+                    <h3>Facebook</h3>
+                    <i class="fa-brands fa-square-facebook"></i>
+                </div>
+                <div>
+                    <h3>Facebook</h3>
+                    <i class="fa-brands fa-square-whatsapp"></i>
+                </div>
+                <div>
+                    <h3>Facebook</h3>
+                    <i class="fa-brands fa-square-instagram"></i>
+                </div>
+                <div>
+                    <h3>Facebook</h3>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <div>
+                    <h3>Facebook</h3>
+                    <i class="fa-brands fa-square-github"></i>
+                </div>
+
+            </div>
+            <form action="" method="post">
+                <input type="text" name="nome" id="nome" placeholder="Digite o seu nome">
+                <input type="email" name="email" id="email" placeholder="Digite o seu email">
+                <textarea name="mensagem" id="mensagem" placeholder="Escreva uma mensagem"></textarea>
+            </form>
+        </div>
+    </section>
 
     <script src="script.js">
         
